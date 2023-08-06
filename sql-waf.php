@@ -55,7 +55,7 @@ function get_waf($waf) {
     } elseif ($waf == 'group concat') {
         $waf = file_get_contents('https://raw.githubusercontent.com/BinsarJr/sql-bypass-waf/master/.bin/group_concat.txt');
     } elseif ($waf == 'information schema') {
-        $waf = file_get_contents('https://raw.githubusercontent.com/BinsarJr/sql-bypass-waf/master/.bin/information schema.txt');
+        $waf = file_get_contents('https://raw.githubusercontent.com/BinsarJr/sql-bypass-waf/master/.bin/information_schema.txt');
     } else {
         clear();
         die(color('normal') . "Parameter Invalid -> coba cek function get_waf" . PHP_EOL);
